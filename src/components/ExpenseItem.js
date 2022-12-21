@@ -1,10 +1,12 @@
 import "./ExpenseItem.css";
 
 function ExpenseItem(props) {
+  const month = props.date.toLocaleDateString("en-US", { month: "long" });
+
   return (
     <div className="expense-item">
       <div>
-        <div>{props.date.toLocaleDateString("en-US", { month: "long" })}</div>
+        <div>{month}</div>
         <div>Year</div>
         <div>Day</div>
       </div>
