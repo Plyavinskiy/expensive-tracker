@@ -1,3 +1,4 @@
+import ExpenseForm from "./ExpenseForm";
 import "./NewExpense.css";
 
 const NewExpense = () => {
